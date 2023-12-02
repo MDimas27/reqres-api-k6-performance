@@ -1,0 +1,151 @@
+{
+    "metrics": {
+        "iterations": {
+            "count": 3500,
+            "rate": 103.81553164117655
+        },
+        "data_received": {
+            "count": 6099787,
+            "rate": 180929.3229436964
+        },
+        "iteration_duration": {
+            "p(90)": 2994.2812599999997,
+            "p(95)": 3372.1200999999987,
+            "avg": 1522.0587399428568,
+            "min": 737.9886,
+            "med": 1058.2188500000002,
+            "max": 28943.5703
+        },
+        "http_req_sending": {
+            "avg": 0.26514425714285744,
+            "min": 0,
+            "med": 0,
+            "max": 16.4851,
+            "p(90)": 0.9077900000000022,
+            "p(95)": 1.001605
+        },
+        "http_req_duration{expected_response:true}": {
+            "min": 362.3787,
+            "med": 459.80895,
+            "max": 28454.4316,
+            "p(90)": 790.4690900000002,
+            "p(95)": 1239.6192449999999,
+            "avg": 561.5184013000007
+        },
+        "http_req_connecting": {
+            "min": 0,
+            "med": 0,
+            "max": 3058.7557,
+            "p(90)": 131.72680000000014,
+            "p(95)": 324.68084499999964,
+            "avg": 89.91371185714284
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 7000,
+            "value": 0
+        },
+        "http_req_waiting": {
+            "min": 362.2253,
+            "med": 458.29565,
+            "max": 28453.7334,
+            "p(90)": 687.2247300000002,
+            "p(95)": 1149.166499999997,
+            "avg": 549.1039434285714
+        },
+        "http_req_receiving": {
+            "med": 0.2149,
+            "max": 3871.9195,
+            "p(90)": 2.0814900000000023,
+            "p(95)": 4.437479999999991,
+            "avg": 12.149313614285703,
+            "min": 0
+        },
+        "http_req_blocked": {
+            "max": 5220.9989,
+            "p(90)": 922.3881800000003,
+            "p(95)": 1390.7007849999995,
+            "avg": 198.8925221714284,
+            "min": 0,
+            "med": 0
+        },
+        "data_sent": {
+            "count": 1235000,
+            "rate": 36632.051879100865
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1000
+        },
+        "vus_max": {
+            "value": 1000,
+            "min": 1000,
+            "max": 1000
+        },
+        "http_req_duration": {
+            "med": 459.80895,
+            "max": 28454.4316,
+            "p(90)": 790.4690900000002,
+            "p(95)": 1239.6192449999999,
+            "avg": 561.5184013000007,
+            "min": 362.3787,
+            "thresholds": {
+                "p(95)<2000": false
+            }
+        },
+        "http_reqs": {
+            "count": 7000,
+            "rate": 207.6310632823531
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 718.1039699999999,
+            "avg": 93.33333887142862,
+            "min": 0,
+            "med": 0,
+            "max": 4785.0581,
+            "p(90)": 326.42920000000015
+        },
+        "checks": {
+            "passes": 13919,
+            "fails": 81,
+            "value": 0.9942142857142857
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "Create API is successful": {
+                    "path": "::Create API is successful",
+                    "id": "7d939a8f9c1bfce9caf64e26071f9a55",
+                    "passes": 3500,
+                    "fails": 0,
+                    "name": "Create API is successful"
+                },
+                "Create API response time is within limits": {
+                    "passes": 3449,
+                    "fails": 51,
+                    "name": "Create API response time is within limits",
+                    "path": "::Create API response time is within limits",
+                    "id": "e45f1c0338650e175fbdaf363b22ec39"
+                },
+                "Update API is successful": {
+                    "name": "Update API is successful",
+                    "path": "::Update API is successful",
+                    "id": "31adaf5438f91cf3647d779900132df9",
+                    "passes": 3500,
+                    "fails": 0
+                },
+                "Update API response time is within limits": {
+                    "name": "Update API response time is within limits",
+                    "path": "::Update API response time is within limits",
+                    "id": "f86077f7d839aed9aa55d209d8b85441",
+                    "passes": 3470,
+                    "fails": 30
+                }
+            }
+    }
+}
